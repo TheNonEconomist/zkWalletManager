@@ -1,0 +1,18 @@
+/* header */
+body{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 200;
+}
+
+.header{
+    background-color: grey;
+    height: 5em;
+    font-family: sans-serif;
+}
+
+/* main content */
+.main{
+    /* nothing for now */
+    
+
+}
