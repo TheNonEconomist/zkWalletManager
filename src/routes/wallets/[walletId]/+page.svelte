@@ -1,6 +1,7 @@
 <script lang="ts">
     import {page} from '$app/stores';
     import { onMount } from 'svelte';
+    import WalletDisplay from "./WalletDisplay.svelte";
 
     let wallet: Record<string, string>
 
@@ -10,7 +11,14 @@
     async function getWallet(id: string) {
         return {
             "id": id,
-            "lorem": "ipsum"
+            "chains":[
+                "bitcoin",
+                "ethereum"
+            ],
+            "extlinks":[
+                "twitter",
+                "farcaster"
+            ]
         }
     }
 
@@ -19,7 +27,7 @@
     })
 </script>
 
-{JSON.stringify(wallet)}
+<WalletDisplay wallet = {wallet}/>
 
 
 
