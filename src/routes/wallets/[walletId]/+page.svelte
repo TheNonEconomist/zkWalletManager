@@ -8,10 +8,11 @@
 
     $: walletId = $page.params.walletId;
 
-    // TODO
+    // TODO: replace with API call
     async function getWallet(id: string) {
         return {
             "id": id,
+            "location": "123 ABCDEF, GHI, JKLM",
             "chains":{
                 "bitcoin": "0x123",
                 "ethereum": "0x456"

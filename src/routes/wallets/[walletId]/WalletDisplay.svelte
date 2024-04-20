@@ -1,9 +1,12 @@
 <script>
     export let wallet;
+    import locationpin from "../../../logos/location-pin.png";
 </script>
 
 <!-- header-->
 <h2>{wallet["id"]}</h2>
+
+<p><img src = {locationpin} height = "32px"/> {wallet["location"]}</p>
 
 <div class = "links">
     <!-- blockchain links-->
