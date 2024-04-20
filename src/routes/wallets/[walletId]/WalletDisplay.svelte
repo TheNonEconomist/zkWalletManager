@@ -1,4 +1,4 @@
-<script>
+<script lang = "ts">
     export let wallet;
 </script>
 
@@ -8,16 +8,16 @@
 <!-- blockchain links-->
 <h2>Other wallets</h2>
 <ul>
-    {#each wallet["chains"] as chain}
-        <li>{chain}</li>
+    {#each Object.entries(wallet["chains"]) as [chain, username]}
+        <li>{chain}: {username}</li>
     {/each}
 </ul>
 
 <!-- external links-->
 <h2>External links</h2>
 <ul>
-    {#each wallet["extlinks"] as extlink}
-        <li>{extlink}</li>
+    {#each Object.entries(wallet["extlinks"]) as [extsite, username]}
+        <li>{extsite}: {username}</li>
     {/each}
 </ul>
 
