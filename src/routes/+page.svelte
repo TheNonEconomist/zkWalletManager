@@ -1,6 +1,8 @@
-<div class = "header">
-    <h1>zkwalletmanager</h1>
-</div>
+<script>
+    import Navbar from "./Navbar.svelte";
+</script>
+
+<Navbar/>
 
 <div class = "main">
     <h2>Your hub for blockchain users</h2>

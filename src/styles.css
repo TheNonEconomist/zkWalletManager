@@ -17,19 +17,15 @@ body{
 }
 
 /* links div */
-.links:after{
-    content: "";
-    display: table;
-    clear: both;
+.links{
+    display: flex;
 }
 
 /* each column */
 .column{
-    float: left;
-    width: 50%;
-}
+    flex: 1;
 
 /* left border for first column */
-.column:last-child{
-    border-left: 1px solid black;
+.column{
+    border: 1px solid black;
 }

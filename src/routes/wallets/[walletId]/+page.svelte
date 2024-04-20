@@ -29,6 +29,8 @@
     })
 </script>
 
+<Navbar/>
+
 <div class = "main">
     {#if pageLoaded == true}
         <WalletDisplay wallet = {wallet}/>
