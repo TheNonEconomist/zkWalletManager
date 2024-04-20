@@ -32,7 +32,7 @@
     {#if pageLoaded}
         <ul>
             {#each popularWallets as wallet}
-                <li><a href = "/wallets/{wallet}">{wallet}</li>
+                <li><a href = "/wallets/{wallet}">{wallet}</a></li>
             {/each}
         </ul>
     {/if}
