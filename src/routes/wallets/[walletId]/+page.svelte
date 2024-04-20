@@ -4,6 +4,7 @@
     import WalletDisplay from "./WalletDisplay.svelte";
 
     let wallet: Record<string, string>
+    let pageLoaded: Boolean = false;
 
     $: walletId = $page.params.walletId;
 
@@ -24,10 +25,13 @@
 
     onMount(async() => {
         wallet = await getWallet(walletId);
+        pageLoaded = true;
     })
 </script>
 
-<WalletDisplay wallet = {wallet}/>
+{#if pageLoaded == true}
+    <WalletDisplay wallet = {wallet}/>
+{/if}
 
 
 
