@@ -1,6 +1,5 @@
 <script lang = "ts">
     import { onMount } from "svelte";
-    import Navbar from "../Navbar.svelte";
 
     let popularWallets;
     let pageLoaded = false;
@@ -21,19 +20,14 @@
     });
 </script>
 
-<Navbar />
+<h2>Explore wallets!</h2>
 
-<!-- placeholder -->
-<div class = "main">
-    <h2>Explore wallets!</h2>
+<p>Popular wallets:</p>
 
-    <p>Popular wallets:</p>
-
-    {#if pageLoaded}
-        <ul>
-            {#each popularWallets as wallet}
-                <li><a href = "/wallets/{wallet}">{wallet}</a></li>
-            {/each}
-        </ul>
-    {/if}
-</div>
+{#if pageLoaded}
+    <ul>
+        {#each popularWallets as wallet}
+            <li><a href = "/wallets/{wallet}">{wallet}</a></li>
+        {/each}
+    </ul>
+{/if}

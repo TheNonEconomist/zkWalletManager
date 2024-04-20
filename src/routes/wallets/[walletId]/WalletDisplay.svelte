@@ -3,12 +3,12 @@
 </script>
 
 <!-- header-->
-<h1>{wallet["id"]}</h1>
+<h2>{wallet["id"]}</h2>
 
 <div class = "links">
     <!-- blockchain links-->
     <div class = "column">
-        <h2>Wallets</h2>
+        <h3>Wallets</h3>
         <ul>
             {#each Object.entries(wallet["chains"]) as [chain, username]}
                 <li>{chain}: {username}</li>
@@ -18,7 +18,7 @@
 
     <!-- external links-->
     <div class = "column">
-        <h2>External links</h2>
+        <h3>External links</h3>
         <ul>
             {#each Object.entries(wallet["extlinks"]) as [extsite, username]}
                 <li>{extsite}: {username}</li>

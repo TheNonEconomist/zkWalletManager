@@ -1,5 +1,10 @@
 <script lang="ts">
-    import "../styles.css"
+    import "../styles.css";
+    import Navbar from "./Navbar.svelte";
 </script>
 
-<slot/>
+<Navbar />
+
+<div class = "main">
+    <slot/>
+</div>
