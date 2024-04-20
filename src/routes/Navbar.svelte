@@ -3,5 +3,6 @@
     <nav>
         <a href = "/">Home</a>
         <a href = "/about">About</a>
+        <a href = "/explore">Explore</a>
     </nav>
 </div>
