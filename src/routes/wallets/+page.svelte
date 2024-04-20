@@ -24,14 +24,16 @@
 <Navbar />
 
 <!-- placeholder -->
-<h2>Explore wallets!</h2>
+<div class = "main">
+    <h2>Explore wallets!</h2>
 
-<p>Popular wallets:</p>
+    <p>Popular wallets:</p>
 
-{#if pageLoaded}
-    <ul>
-        {#each popularWallets as wallet}
-            <li>{wallet}</li>
-        {/each}
-    </ul>
-{/if}
+    {#if pageLoaded}
+        <ul>
+            {#each popularWallets as wallet}
+                <li><a href = "/wallets/{wallet}">{wallet}</li>
+            {/each}
+        </ul>
+    {/if}
+</div>

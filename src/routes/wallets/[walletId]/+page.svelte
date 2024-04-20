@@ -2,6 +2,7 @@
     import {page} from '$app/stores';
     import { onMount } from 'svelte';
     import WalletDisplay from "./WalletDisplay.svelte";
+    import Navbar from "../../Navbar.svelte";
 
     let wallet: Record<string, Record<string, string>>
     let pageLoaded: Boolean = false;
