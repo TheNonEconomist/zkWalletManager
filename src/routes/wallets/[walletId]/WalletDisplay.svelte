@@ -1,6 +1,7 @@
 <script>
     export let wallet;
     import locationpin from "../../../logos/location-pin.png";
+    import LinkList from "./LinkList.svelte";
 </script>
 
 <!-- header-->
@@ -12,23 +13,12 @@
     <!-- blockchain links-->
     <div class = "column">
         <h3>Wallets</h3>
-        <ul>
-            {#each Object.entries(wallet["chains"]) as [chain, username]}
-                <li>{chain}: {username}</li>
-            {/each}
-        </ul>
+        <LinkList linksToList = {wallet["chains"]} />
     </div>
 
     <!-- external links-->
     <div class = "column">
         <h3>External links</h3>
-        <ul>
-            {#each Object.entries(wallet["extlinks"]) as [extsite, username]}
-                <li>{extsite}: {username}</li>
-            {/each}
-        </ul>
+        <LinkList linksToList = {wallet["extlinks"]} />
     </div>
-
-    <!-- sanity check-->
-    <!-- <p>{JSON.stringify(wallet)}</p> -->
 </div>
