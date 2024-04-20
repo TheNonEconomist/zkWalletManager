@@ -8,14 +8,18 @@
 <!-- blockchain links-->
 <h2>Other wallets</h2>
 <ul>
-    <li>{JSON.stringify(wallet["chains"])}</li>
+    {#each wallet["chains"] as chain}
+        <li>{chain}</li>
+    {/each}
 </ul>
 
 <!-- external links-->
 <h2>External links</h2>
 <ul>
-    <li>{JSON.stringify(wallet["extlinks"])}</li>
+    {#each wallet["extlinks"] as extlink}
+        <li>{extlink}</li>
+    {/each}
 </ul>
 
 <!-- sanity check-->
-<p>{JSON.stringify(wallet)}</p>
+<!-- <p>{JSON.stringify(wallet)}</p> -->
