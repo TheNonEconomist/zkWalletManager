@@ -1,9 +1,10 @@
-/* header */
+/* body */
 body{
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 200;
 }
 
+/* header */
 .header{
     background-color: grey;
     height: 5em;
@@ -13,6 +14,22 @@ body{
 /* main content */
 .main{
     /* nothing for now */
-    
+}
 
+/* links div */
+.links:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* each column */
+.column{
+    float: left;
+    width: 50%;
+}
+
+/* left border for first column */
+.column:last-child{
+    border-left: 1px solid black;
 }

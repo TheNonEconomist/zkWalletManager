@@ -29,9 +29,11 @@
     })
 </script>
 
-{#if pageLoaded == true}
-    <WalletDisplay wallet = {wallet}/>
-{/if}
+<div class = "main">
+    {#if pageLoaded == true}
+        <WalletDisplay wallet = {wallet}/>
+    {/if}
+</div>
 
 
 
